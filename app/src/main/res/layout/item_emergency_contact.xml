@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/glass_card"
+    android:padding="20dp"
+    android:layout_marginBottom="16dp"
+    android:elevation="6dp"
+    android:clipChildren="false"
+    android:clipToPadding="false">
+
+    <!-- Contact Avatar and Status -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="12dp">
+
+        <!-- Avatar Circle -->
+        <LinearLayout
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/button_primary_background"
+            android:gravity="center"
+            android:layout_marginEnd="16dp"
+            android:elevation="4dp">
+
+            <TextView
+                android:id="@+id/tv_contact_avatar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="JD"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_white" />
+
+        </LinearLayout>
+
+        <!-- Contact Info -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_contact_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="John Doe"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_primary"
+                android:layout_marginBottom="4dp"
+                android:letterSpacing="0.02" />
+
+            <TextView
+                android:id="@+id/tv_contact_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+213 123 456 789"
+                android:textSize="16sp"
+                android:textColor="@color/text_secondary"
+                android:layout_marginBottom="2dp" />
+
+            <TextView
+                android:id="@+id/tv_contact_relationship"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Son"
+                android:textSize="14sp"
+                android:textColor="@color/primary_red"
+                android:textStyle="bold"
+                android:background="@drawable/input_field_background"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp" />
+
+        </LinearLayout>
+
+        <!-- Emergency Status Indicator -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginStart="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🚨"
+                android:textSize="24sp"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ACTIVE"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:textColor="@color/primary_red"
+                android:letterSpacing="0.05" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Action Buttons Row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btn_edit_contact"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="✏️ EDIT"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_white"
+            android:background="@drawable/button_secondary_background"
+            android:layout_marginEnd="8dp"
+            android:letterSpacing="0.02"
+            android:gravity="center" />
+
+        <Button
+            android:id="@+id/btn_test_alert"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="📱 TEST"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_white"
+            android:background="@drawable/button_primary_background"
+            android:layout_marginEnd="8dp"
+            android:letterSpacing="0.02"
+            android:gravity="center" />
+
+        <Button
+            android:id="@+id/btn_delete_contact"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="🗑️ DELETE"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_white"
+            android:background="@drawable/button_secondary_background"
+            android:letterSpacing="0.02"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+</LinearLayout>

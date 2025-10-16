@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    
+    <!-- Primary colors based on design -->
+    <color name="primary_red">#FF6B6B</color>
+    <color name="primary_red_dark">#E55A5A</color>
+    <color name="coral_red">#FF7F7F</color>
+    <color name="light_gray">#F5F5F5</color>
+    <color name="medium_gray">#CCCCCC</color>
+    <color name="dark_gray">#666666</color>
+    
+    <!-- Background colors -->
+    <color name="background_light">#FAFAFA</color>
+    <color name="background_white">#FFFFFF</color>
+    <color name="background_emergency">#FF6B6B</color>
+    
+    <!-- Text colors -->
+    <color name="text_primary">#333333</color>
+    <color name="text_secondary">#666666</color>
+    <color name="text_white">#FFFFFF</color>
+    
+    <!-- Button colors -->
+    <color name="button_primary">#FF6B6B</color>
+    <color name="button_primary_pressed">#E55A5A</color>
+    
+    <!-- Input field colors -->
+    <color name="input_background">#F0F0F0</color>
+    <color name="input_hint">#999999</color>
+</resources>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    
+    <!-- SafeStep icon - falling person with safety net -->
+    <path
+        android:fillColor="@color/white"
+        android:pathData="M54,20 C40,20 30,30 30,44 L30,60 C30,65 35,70 40,70 L68,70 C73,70 78,65 78,60 L78,44 C78,30 68,20 54,20 Z" />
+    
+    <!-- Person figure -->
+    <path
+        android:fillColor="@color/primary_red"
+        android:pathData="M54,30 C50,30 47,33 47,37 L47,50 C47,52 49,54 51,54 L57,54 C59,54 61,52 61,50 L61,37 C61,33 58,30 54,30 Z" />
+    
+    <!-- Safety net -->
+    <path
+        android:fillColor="@color/white"
+        android:pathData="M20,75 L88,75 L88,85 L20,85 Z" />
+</vector>

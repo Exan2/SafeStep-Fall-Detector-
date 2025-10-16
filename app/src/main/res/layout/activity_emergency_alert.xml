@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/emergency_gradient"
+    android:gravity="center"
+    android:padding="24dp"
+    android:clipChildren="false"
+    android:clipToPadding="false">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EMERGENCY ALERT"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:letterSpacing="0.05"
+        android:layout_marginBottom="24dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/glass_card"
+        android:padding="24dp"
+        android:layout_marginBottom="16dp"
+        android:clipChildren="false"
+        android:clipToPadding="false">
+
+        <FrameLayout
+            android:layout_width="220dp"
+            android:layout_height="220dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp"
+            android:clipChildren="false"
+            android:clipToPadding="false">
+
+            <ImageView
+                android:id="@+id/iv_pulse"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/neon_pulse"
+                android:contentDescription="Pulse ring" />
+
+            <ImageView
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_gravity="center"
+                android:src="@drawable/emergency_illustration_png"
+                android:contentDescription="Emergency siren" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_tap_instruction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tap anywhere on the screen 3 times to cancel"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CALLING EMERGENCY IN"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:id="@+id/tv_countdown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10"
+            android:textSize="64sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="4dp"
+            android:letterSpacing="0.05" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SECONDS"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_gravity="center" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tap anywhere on screen 3 times to cancel emergency"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:alpha="0.8" />
+
+</LinearLayout>

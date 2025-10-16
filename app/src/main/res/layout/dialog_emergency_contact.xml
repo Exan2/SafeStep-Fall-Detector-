@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/glass_card"
+    android:padding="28dp"
+    android:clipChildren="false"
+    android:clipToPadding="false">
+
+    <!-- Header -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📱 EMERGENCY CONTACT"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/primary_red"
+        android:letterSpacing="0.03"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+        android:shadowColor="@color/primary_red"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="8" />
+
+    <!-- Name Field -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        style="@style/InputField">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_contact_name"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="Contact Name"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:imeOptions="actionNext"
+            android:autofillHints="name"
+            android:paddingStart="18dp"
+            android:paddingEnd="18dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/input_field_background" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Phone Field -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        style="@style/InputField">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_contact_phone"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="Phone Number"
+            android:inputType="phone"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:imeOptions="actionNext"
+            android:autofillHints="phone"
+            android:paddingStart="18dp"
+            android:paddingEnd="18dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/input_field_background" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Relationship Field -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/InputField">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_contact_relationship"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="Relationship (e.g., Son, Daughter, Friend)"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:imeOptions="actionDone"
+            android:paddingStart="18dp"
+            android:paddingEnd="18dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/input_field_background" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+</LinearLayout>

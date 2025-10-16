@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt">
+    <aapt:attr name="android:drawable">
+        <vector
+            android:width="220dp"
+            android:height="220dp"
+            android:viewportWidth="220"
+            android:viewportHeight="220">
+
+            <group android:name="ringOuter" android:pivotX="110" android:pivotY="110">
+                <path
+                    android:name="outer"
+                    android:fillColor="#00FFFFFF"
+                    android:strokeWidth="6"
+                    android:strokeColor="#FFFFFFFF"
+                    android:pathData="M110,10 A100,100 0 1,1 109.9,10" />
+            </group>
+
+            <group android:name="ringMid" android:pivotX="110" android:pivotY="110">
+                <path
+                    android:name="mid"
+                    android:fillColor="#00FFFFFF"
+                    android:strokeWidth="5"
+                    android:strokeColor="#B3FFFFFF"
+                    android:pathData="M110,30 A80,80 0 1,1 109.9,30" />
+            </group>
+
+            <group android:name="ringInner" android:pivotX="110" android:pivotY="110">
+                <path
+                    android:name="inner"
+                    android:fillColor="#00FFFFFF"
+                    android:strokeWidth="4"
+                    android:strokeColor="#80FFFFFF"
+                    android:pathData="M110,50 A60,60 0 1,1 109.9,50" />
+            </group>
+        </vector>
+    </aapt:attr>
+
+    <!-- Outer ring: deep shrink to big expand for limitless feel -->
+    <target android:name="ringOuter">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator android:propertyName="scaleX" android:duration="1800" android:interpolator="@android:interpolator/fast_out_slow_in" android:valueFrom="0.3" android:valueTo="1.8" android:repeatCount="infinite" android:repeatMode="reverse" />
+                <objectAnimator android:propertyName="scaleY" android:duration="1800" android:interpolator="@android:interpolator/fast_out_slow_in" android:valueFrom="0.3" android:valueTo="1.8" android:repeatCount="infinite" android:repeatMode="reverse" />
+                <objectAnimator android:propertyName="alpha" android:duration="1800" android:valueFrom="0.9" android:valueTo="0.05" android:repeatCount="infinite" android:repeatMode="reverse" />
+            </set>
+        </aapt:attr>
+    </target>
+
+    <!-- Mid ring: staggered, slightly different range -->
+    <target android:name="ringMid">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator android:startOffset="150" android:propertyName="scaleX" android:duration="1800" android:interpolator="@android:interpolator/fast_out_slow_in" android:valueFrom="0.4" android:valueTo="1.7" android:repeatCount="infinite" android:repeatMode="reverse" />
+                <objectAnimator android:startOffset="150" android:propertyName="scaleY" android:duration="1800" android:interpolator="@android:interpolator/fast_out_slow_in" android:valueFrom="0.4" android:valueTo="1.7" android:repeatCount="infinite" android:repeatMode="reverse" />
+                <objectAnimator android:startOffset="150" android:propertyName="alpha" android:duration="1800" android:valueFrom="0.7" android:valueTo="0.05" android:repeatCount="infinite" android:repeatMode="reverse" />
+            </set>
+        </aapt:attr>
+    </target>
+
+    <!-- Inner ring: quickest, tightest pulse to complement others -->
+    <target android:name="ringInner">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator android:startOffset="300" android:propertyName="scaleX" android:duration="1600" android:interpolator="@android:interpolator/fast_out_slow_in" android:valueFrom="0.5" android:valueTo="1.6" android:repeatCount="infinite" android:repeatMode="reverse" />
+                <objectAnimator android:startOffset="300" android:propertyName="scaleY" android:duration="1600" android:interpolator="@android:interpolator/fast_out_slow_in" android:valueFrom="0.5" android:valueTo="1.6" android:repeatCount="infinite" android:repeatMode="reverse" />
+                <objectAnimator android:startOffset="300" android:propertyName="alpha" android:duration="1600" android:valueFrom="0.6" android:valueTo="0.05" android:repeatCount="infinite" android:repeatMode="reverse" />
+            </set>
+        </aapt:attr>
+    </target>
+</animated-vector>

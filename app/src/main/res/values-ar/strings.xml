@@ -1,0 +1,86 @@
+<resources>
+    <string name="app_name">SStep</string>
+
+    <!-- Main Screen -->
+    <string name="main_subtitle">رفيقك الشخصي لاكتشاف السقوط</string>
+    <string name="toggle_language">التبديل إلى الإنجليزية</string>
+    <string name="start_monitoring">بدء المراقبة</string>
+    <string name="update_personal_info">تحديث المعلومات الشخصية</string>
+    <string name="settings">الإعدادات</string>
+    <!-- Settings Screen -->
+    <string name="settings_section_personal_info">المعلومات الشخصية</string>
+    <string name="label_name">الاسم:</string>
+    <string name="label_age">العمر:</string>
+    <string name="label_blood_type">فصيلة الدم:</string>
+    <string name="label_wilaya">الولاية:</string>
+    <string name="label_daira">الدائرة:</string>
+    <string name="label_phone">الهاتف:</string>
+    <string name="value_not_set">غير محدد</string>
+    <string name="edit_personal_info">تعديل المعلومات الشخصية</string>
+    <string name="settings_section_detector">حالة الكاشف</string>
+    <string name="label_fall_detection">اكتشاف السقوط:</string>
+    <string name="status_on">مُفعل</string>
+    <string name="status_off">غير مُفعل</string>
+    <string name="sensitivity_low">منخفض</string>
+    <string name="sensitivity_high">مرتفع</string>
+    <string name="seconds_short_5">5ث</string>
+    <string name="seconds_short_30">30ث</string>
+    <string name="seconds_10">10 ثوانٍ</string>
+    <string name="test_fall_detection">اختبار اكتشاف السقوط</string>
+
+    <!-- Onboarding Screen 1 -->
+    <string name="onboarding1_title">مرحبًا بك في SafeStep</string>
+    <string name="onboarding1_description">رفيقك الشخصي لاكتشاف السقوط. نراقب الحركة لاكتشاف السقوط الخطير والحصول على المساعدة بسرعة — تلقائيًا أو بلمسة</string>
+
+    <!-- Onboarding Screen 2 -->
+    <string name="onboarding2_title">مساعدة سريعة، باختيارك</string>
+    <string name="onboarding2_description">أضف جهات اتصال موثوقة للطوارئ، واختر التنبيهات التلقائية أو اليدوية، وشارك موقعك عند الحاجة. خصوصيتك مهمة — تبقى بياناتك على جهازك ما لم تسمح بالمشاركة</string>
+
+    <!-- Onboarding Screen 3 -->
+    <string name="onboarding3_title">مستشعرات ذكية، حماية بسيطة</string>
+    <string name="onboarding3_description">تكتشف مستشعرات هاتفك الصدمات المفاجئة وأنماط الحركة غير المعتادة. إذا اكتشفنا سقوطًا، سننبهك — ثم جهات اتصالك إذا لم تستجب</string>
+
+    <!-- Emergency Alert Screen -->
+    <string name="emergency_title">في حالة الطوارئ ستظهر هذه الشاشة</string>
+    <string name="emergency_instruction">لقد اكتشفنا سقوطًا خطيرًا. أخبرنا أنك بخير عن طريق لمس الشاشة 3 مرات</string>
+    <string name="emergency_countdown">الاتصال بالطوارئ خلال...</string>
+    <string name="emergency_seconds">10 ثوانٍ</string>
+
+    <!-- User Info Screen -->
+    <string name="user_info_title">املأ هذه المعلومات</string>
+    <string name="user_info_warning">يرجى الانتباه عند إدخال معلوماتك. سيعتمد التطبيق على هذه التفاصيل لمساعدتك في حالات الطوارئ</string>
+    <string name="name_hint">الاسم</string>
+    <string name="dob_hint">تاريخ الميلاد</string>
+    <string name="id_hint">رقم الهوية</string>
+    <string name="blood_type_hint">فصيلة الدم</string>
+    <string name="wilaya_hint">الولاية</string>
+    <string name="daira_hint">الدائرة</string>
+    <string name="phone_hint">رقم الهاتف</string>
+    <string name="save_button">حفظ</string>
+
+    <!-- Common -->
+    <string name="next">التالي</string>
+    <string name="get_started">ابدأ الآن</string>
+    <string name="skip">تخطي</string>
+
+    <!-- Permissions -->
+    <string name="permission_location_title">مطلوب إذن الموقع</string>
+    <string name="permission_location_message">يحتاج SafeStep إلى الوصول إلى الموقع لإرسال موقعك إلى جهات الاتصال عند اكتشاف السقوط.</string>
+    <string name="permission_phone_title">مطلوب إذن الهاتف</string>
+    <string name="permission_phone_message">يحتاج SafeStep إلى الوصول إلى الهاتف لإجراء مكالمات طوارئ عند اكتشاف السقوط.</string>
+    <string name="grant_permission">منح الإذن</string>
+    <string name="permission_denied">تم رفض الإذن</string>
+    <string name="permission_denied_message">يتطلب هذا التطبيق أذونات الموقع والهاتف ليعمل بشكل صحيح.</string>
+
+    <!-- Settings -->
+    <string name="settings_title">الإعدادات</string>
+    <string name="emergency_contacts">جهات اتصال الطوارئ</string>
+    <string name="fall_detection_sensitivity">حساسية اكتشاف السقوط</string>
+    <string name="countdown_duration">مدة العد التنازلي</string>
+    <string name="enable_fall_detection">تفعيل اكتشاف السقوط</string>
+
+    <!-- Fall Detection Service -->
+    <string name="fall_detection_notification_title">SafeStep يراقب السقوط</string>
+    <string name="fall_detection_notification_text">اضغط لفتح الإعدادات</string>
+</resources>
+

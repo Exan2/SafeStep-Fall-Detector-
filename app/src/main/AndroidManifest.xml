@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Permissions for fall detection and emergency features -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/icon_app"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/icon_app"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SafeStep">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".OnboardingActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".UserInfoActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".EmergencyDemoActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".EmergencyAlertActivity"
+            android:exported="false"
+            android:showOnLockScreen="true" />
+
+        <activity
+            android:name=".EmergencyContactsActivity"
+            android:exported="false" />
+
+        <service
+            android:name=".FallDetectionService"
+            android:exported="false"
+            android:foregroundServiceType="location" />
+
+    </application>
+
+</manifest>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+    
+    <!-- Location pin with plus sign illustration placeholder -->
+    <!-- Replace this with your actual SVG content when converted -->
+    <path
+        android:fillColor="@color/primary_red"
+        android:pathData="M100,30 C85,30 75,40 75,55 L75,120 C75,125 80,130 85,130 L115,130 C120,130 125,125 125,120 L125,55 C125,40 115,30 100,30 Z" />
+    
+    <path
+        android:fillColor="@color/white"
+        android:pathData="M100,50 L100,70 M90,60 L110,60" />
+</vector>

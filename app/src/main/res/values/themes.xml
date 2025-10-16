@@ -1,0 +1,81 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.SafeStep" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/primary_red</item>
+        <item name="colorPrimaryVariant">@color/primary_red_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/coral_red</item>
+        <item name="colorSecondaryVariant">@color/primary_red_dark</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/white</item>
+        <!-- Background color -->
+        <item name="android:windowBackground">@color/background_light</item>
+        <!-- Customize your theme here. -->
+    </style>
+    
+    <!-- Emergency Alert Theme -->
+    <style name="Theme.SafeStep.Emergency" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowBackground">@color/background_emergency</item>
+        <item name="android:statusBarColor">@color/primary_red_dark</item>
+        <item name="android:navigationBarColor">@color/primary_red_dark</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+    
+    <!-- Button Styles -->
+    <style name="ButtonPrimary" parent="Widget.Material3.Button">
+        <item name="android:background">@drawable/button_primary_background</item>
+        <item name="android:textColor">@color/text_white</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:layout_margin">12dp</item>
+        <item name="android:letterSpacing">0.02</item>
+        <item name="android:minHeight">56dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:drawablePadding">0dp</item>
+    </style>
+    
+    <!-- Button Secondary Style -->
+    <style name="ButtonSecondary" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:background">@drawable/button_secondary_background</item>
+        <item name="android:textColor">@color/primary_red</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:layout_margin">12dp</item>
+        <item name="android:letterSpacing">0.02</item>
+        <item name="android:minHeight">56dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:drawablePadding">0dp</item>
+    </style>
+    
+    <!-- Input Field Style -->
+    <style name="InputField" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="android:layout_margin">16dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="boxStrokeColor">@color/primary_red</item>
+        <item name="hintTextColor">@color/input_hint</item>
+    </style>
+    
+    <!-- Title Text Style -->
+    <style name="TitleText">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/primary_red</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">16dp</item>
+    </style>
+    
+    <!-- Body Text Style -->
+    <style name="BodyText">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:lineSpacingMultiplier">1.2</item>
+        <item name="android:layout_margin">16dp</item>
+    </style>
+</resources>

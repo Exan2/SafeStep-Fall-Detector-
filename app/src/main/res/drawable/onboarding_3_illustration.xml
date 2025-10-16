@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+    
+    <!-- Smartphone with app icons illustration placeholder -->
+    <!-- Replace this with your actual SVG content when converted -->
+    <path
+        android:fillColor="@color/dark_gray"
+        android:pathData="M70,40 L130,40 L130,160 L70,160 Z" />
+    
+    <path
+        android:fillColor="@color/primary_red"
+        android:pathData="M75,45 L125,45 L125,155 L75,155 Z" />
+    
+    <!-- App icons placeholder -->
+    <path android:fillColor="@color/white" android:pathData="M85,72 A8,8 0 1,1 85,88 A8,8 0 1,1 85,72 Z" />
+    <path android:fillColor="@color/white" android:pathData="M100,72 A8,8 0 1,1 100,88 A8,8 0 1,1 100,72 Z" />
+    <path android:fillColor="@color/white" android:pathData="M115,72 A8,8 0 1,1 115,88 A8,8 0 1,1 115,72 Z" />
+</vector>

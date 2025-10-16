@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    
+    <!-- Background -->
+    <path
+        android:fillColor="@color/primary_red"
+        android:pathData="M24,24m-24,0a24,24 0,1 1,48 0a24,24 0,1 1,-48 0" />
+    
+    <!-- SafeStep icon -->
+    <path
+        android:fillColor="@color/white"
+        android:pathData="M24,8 C16,8 10,14 10,22 L10,28 C10,30 12,32 14,32 L34,32 C36,32 38,30 38,28 L38,22 C38,14 32,8 24,8 Z" />
+    
+    <!-- Person -->
+    <path
+        android:fillColor="@color/primary_red"
+        android:pathData="M24,12 C22,12 20,14 20,16 L20,22 C20,23 21,24 22,24 L26,24 C27,24 28,23 28,22 L28,16 C28,14 26,12 24,12 Z" />
+    
+    <!-- Safety net -->
+    <path
+        android:fillColor="@color/white"
+        android:pathData="M8,34 L40,34 L40,38 L8,38 Z" />
+</vector>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+    
+    <!-- This will reference your SVG illustration -->
+    <!-- For now, using a placeholder that matches your design -->
+    <path
+        android:fillColor="@color/primary_red"
+        android:pathData="M100,50 L120,80 L80,80 Z" />
+    
+    <!-- Falling man illustration placeholder -->
+    <!-- Replace this with your actual SVG content when converted -->
+</vector>

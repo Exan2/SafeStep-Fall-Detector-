@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="80dp"
+    android:height="80dp"
+    android:viewportWidth="80"
+    android:viewportHeight="80">
+    
+    <!-- Emergency siren illustration -->
+    <!-- This matches your emergency alert screen design -->
+    <path
+        android:fillColor="@color/white"
+        android:pathData="M40,10 C30,10 22,18 22,28 L22,45 C22,50 25,53 30,53 L50,53 C55,53 58,50 58,45 L58,28 C58,18 50,10 40,10 Z" />
+    
+    <!-- Siren light -->
+    <path
+        android:fillColor="@color/primary_red"
+        android:pathData="M40,27 A8,8 0 1,1 40,43 A8,8 0 1,1 40,27 Z" />
+    
+    <!-- Base -->
+    <path
+        android:fillColor="@color/white"
+        android:pathData="M30,53 L50,53 L50,58 L30,58 Z" />
+</vector>
